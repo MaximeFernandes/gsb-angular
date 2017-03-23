@@ -9,4 +9,10 @@ import{ Observable } from 'rxjs/Rx';
   
 })
 export class VisitesComponent {
+  
+  constructor(private dataService : DataService){
+
+  }
+  
+  
 }
