@@ -34,16 +34,14 @@
         <div class="form-group">
             <label for="motif">Motif </label>
             <textarea rows="3" cols="30" required="true" [(ngModel)]="rapport.motif" name="motif">
-        </textarea>
-
+            </textarea>
         </div>
         <div class="form-group">
             <label for="bilan">Bilan</label>
             <textarea rows="3" cols="30" required="true" [(ngModel)]="rapport.bilan" name="bilan"></textarea>
         </div>
         <button type="submit">Valider</button>
-        <div class="alert alert-danger" *ngIf="afficherMessage">{{lblMessage }}</div>
-
+        <div class={{typeMessage}}>{{messageMAJ }}</div>
     </form>
 
 </div>
