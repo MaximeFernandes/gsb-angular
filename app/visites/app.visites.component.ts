@@ -35,6 +35,8 @@ export class VisitesComponent {
   }
   valider(): void{
       // appelle majRapport de DataService 
+      // dans le cas favorable, affiche un message de succès avec des classes CSS "alert alert-success"
+      // et dans le cas défavorable, affiche un message avec des classes CSS "alert alert-danger"
    }
    initNouveauRapport(){
        this.nomMedecin ="";
@@ -61,6 +63,8 @@ export class VisitesComponent {
    }
    enregistrer(): void{
       // appelle la méthode enregistrerRapport du dataService
+      // dans le cas favorable, affiche un message de succès avec des classes CSS "alert alert-success"
+      // et dans le cas défavorable, affiche un message avec des classes CSS "alert alert-danger"
    }
   
 }
