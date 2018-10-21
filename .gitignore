@@ -1,5 +1,5 @@
 /NodeJsWebApplication/nbproject/private/
 *.map
-*.js 
+*.js
 /node_modules
 /.vscode
