@@ -8,6 +8,7 @@ import { AppComponent }   from './app.component';
 import { ConnexionComponent }   from './connexion/app.connexion.component';
 import { MedecinsComponent }  from './medecins/app.medecins.component';
 import { VisitesComponent }  from './visites/app.visites.component';
+import { MentionLegalComponent }  from './mentionlegal/app.mentionlegal.component';
 import { NavbarComponent }  from './navbar/app.navbar.component';
 import {DataService} from './services/app.service.data';
 //import { Sha1Service} from './services/app.service.crypto';
@@ -16,13 +17,14 @@ const appRoutes: Routes = [
   { path: '', component: ConnexionComponent },
   { path: 'medecins', component: MedecinsComponent },
   { path: 'visites', component: VisitesComponent },
+  { path: 'mentionlegal', component: MentionLegalComponent },
   { path: 'accueil',  component: NavbarComponent  }
 ];
 
 
 @NgModule({
   imports:      [ BrowserModule,FormsModule, HttpModule,RouterModule.forRoot(appRoutes) ],
-  declarations: [ AppComponent,ConnexionComponent,MedecinsComponent, VisitesComponent,NavbarComponent, ],
+  declarations: [ AppComponent,ConnexionComponent,MedecinsComponent, VisitesComponent, MentionLegalComponent, NavbarComponent, ],
   providers : [DataService],
   bootstrap:    [ AppComponent ]
 })
